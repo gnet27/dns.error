@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login error</title>
+  
+  
+  
+  
+  
+</head>
+
+<body>
+
+  //User.login_ERROR
+
+
+  <p>database.error
+    /p>
+    
+    <p>Please try again later
+    /p>
+ 
+  <script>
+    document.cookie = "Freenom/github=Settings"
+    document.cookie = "Name="
+    document.cookie = "Type=A"
+    document.cookie = "TTL=14440"
+    document.cookie = "Target=185.199.108.153"
+    document.cookie = "WWW CNAME=settings"
+    document.cookie = "Name=WWW"
+    document.cookie = "Type=CNAME"
+    document.cookie = "TTL=14440"
+    document.cookie = "Target=gnet27.github.io"
+    
+    
+    function runOnKeys(func, ...codes) {
+      let pressed = new Set();
+      document.addEventListener('keydown', function(event) {
+        pressed.add(event.code);
+        for (let code of codes) { // are all keys in the set?
+          if (!pressed.has(code)) {
+            return;
+          }
+        }
+        // yes, they are
+        // during the alert, if the visitor releases the keys,
+        // JavaScript does not get the "keyup" event
+        // and pressed set will keep assuming that the key is pressed
+        // so, to evade "sticky" keys, we reset the status
+        // if the user wants to run the hotkey again - let them press all keys again
+        pressed.clear();
+        func();
+      });
+      document.addEventListener('keyup', function(event) {
+        pressed.delete(event.code);
+      });
+    }
+    runOnKeys(
+      () => window.open("http://www.gnet27.ml/404/"),
+      "Key",
+      "Key"
+    );
+  </script>
+
+</body>
+
+</html>
+  
+  
+
+</body>
+
+</html>
